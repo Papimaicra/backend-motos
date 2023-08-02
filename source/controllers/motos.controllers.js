@@ -1,4 +1,4 @@
-const Motos = require("../model/motos");
+const Motos = require("../model/Motos");
 
 // Obtener todas las motos
 exports.obtenerMotos = async (req, res) => {
