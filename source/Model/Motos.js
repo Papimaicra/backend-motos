@@ -2,7 +2,7 @@ const {Schema , model} = require("mongoose");
 
 const motosSchema = new Schema({
     
-    modelo: string,
+    modelo: String,
     nombre: String,
     descripcion:{
         type: String,
