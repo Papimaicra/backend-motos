@@ -35,9 +35,11 @@ exports.obtenerMotoPorId = async (req, res) => {
 // Crear una nueva moto
 exports.crearMoto = async (req, res) => {
   // aqui es para agregar nuevas descripcionesdhjfkqwfuoqwhscfaksjfhoqwfqfchqofqwufhefhu
-  const { nombre, descripcion, precio } = req.body;
+  const {imagen,modelo, nombre, descripcion, precio } = req.body;
   try {
     const moto = await Motos.create({
+      imagen,
+      modelo,
       nombre,
       descripcion,
       precio,
