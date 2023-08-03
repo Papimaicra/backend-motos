@@ -1,7 +1,6 @@
 const {Schema , model} = require("mongoose");
 
 const motosSchema = new Schema({
-    foto: String,
     modelo: String,
     nombre: String,
     descripcion:{
@@ -9,6 +8,7 @@ const motosSchema = new Schema({
         require: true,
     },
     precio: Number,
+    imgurl: String
     /* aqui se ocupa para cambiar la descripcion */ 
 });
 
