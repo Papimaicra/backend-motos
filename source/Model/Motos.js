@@ -1,6 +1,8 @@
 const {Schema , model} = require("mongoose");
 
 const motosSchema = new Schema({
+    imagen: ,
+    modelo string,
     nombre: String,
     descripcion:{
         type: String,
